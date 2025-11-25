@@ -1,0 +1,20 @@
+{
+  "name": "editkaro-site",
+  "version": "1.0.0",
+  "description": "Editkaro.in marketing site - Home, Portfolio, About, Contact",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.3",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

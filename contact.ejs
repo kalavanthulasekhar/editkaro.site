@@ -1,0 +1,15 @@
+<%- include('partials/header') %>
+
+<h2>Contact Us</h2>
+<p>Fill out the form and we'll reach out soon.</p>
+
+<form id="contactForm" class="contact-form">
+  <label>Name <input type="text" name="name" required></label>
+  <label>Email <input type="email" name="email" required></label>
+  <label>Phone <input type="text" name="phone"></label>
+  <label>Message <textarea name="message" rows="4" required></textarea></label>
+  <button type="submit">Send</button>
+  <p id="contactMsg" class="muted"></p>
+</form>
+
+<%- include('partials/footer') %>

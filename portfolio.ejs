@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+
+<h2>Portfolio</h2>
+<p>Filter by category or preview our sample work (replace placeholder thumbnails with your videos)</p>
+
+<% categories.forEach(cat => { %>
+  <section class="portfolio-category">
+    <h3><%= cat.name %></h3>
+    <div class="grid">
+      <% cat.items.forEach(item => { %>
+        <div class="card">
+          <img src="<%= item.thumb || '/assets/placeholder.jpg' %>" alt="<%= item.title %>" />
+          <h4><%= item.title %></h4>
+          <a href="<%= item.url %>">View</a>
+        </div>
+      <% }) %>
+    </div>
+  </section>
+<% }) %>
+
+<%- include('partials/footer') %>
